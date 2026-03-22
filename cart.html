@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYPASS_STORE | CART</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <ul>
+            <h1 class="glitch" data-text="BYPASS_STORE">BYPASS_STORE</h1>
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="cart.html" class="active cart-link">
+                CART <span class="cart-count" id="cartCount">0</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <section class="cart-section" style="padding-top: 100px; min-height: 80vh;">
+        <div class="container">
+            <h2 class="section-title">YOUR <span class="highlight">STASH</span></h2>
+            
+            <div id="cartItems" class="cart-items">
+                <!-- Сюда JS вставит товары -->
+            </div>
+
+            <div class="cart-total">
+                <h3>TOTAL: <span id="cartTotal">0</span> ₽</h3>
+                <button class="btn-checkout" onclick="checkout()">ENCRYPT & BUY</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>NO REFUNDS. Осипов Данил Евгеньевич ИСП(11)-24-2 <span class="blink">_</span></p>
+        <small>2026 BYPASS_STORE</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

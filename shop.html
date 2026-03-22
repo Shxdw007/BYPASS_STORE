@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYPASS_STORE | SHOP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <ul>
+             <h1 class="glitch" data-text="BYPASS_STORE">BYPASS_STORE</h1>
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html" class="active">SHOP</a></li>
+            <li><a href="cart.html" class="cart-link">
+                CART <span class="cart-count" id="cartCount">0</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <section class="shop-section" style="padding-top: 100px; min-height: 80vh;">
+        <div class="container">
+            <h2 class="section-title">AVAILABLE <span class="highlight">HARDWARE</span></h2>
+            <div class="products-grid">
+                
+                <!-- Товар 1 -->
+                <div class="card">
+                    <div class="card-image">[FLIPPER_ZERO]</div>
+                    <h3>FLIPPER ZERO</h3>
+                    <p>> RFID, NFC, SubGHz, GPIO.</p>
+                    <div class="price">16,990 ₽</div>
+                    <button class="btn-buy" onclick="addToCart('Flipper Zero', 16990)">ADD TO CART</button>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="card">
+                    <div class="card-image">[ESP32_DEV]</div>
+                    <h3>ESP32-WROOM</h3>
+                    <p>> WiFi/BT Controller.</p>
+                    <div class="price">450 ₽</div>
+                    <button class="btn-buy" onclick="addToCart('ESP32-WROOM-32', 450)">ADD TO CART</button>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="card">
+                    <div class="card-image">[USB_DUCKY]</div>
+                    <h3>USB RUBBER DUCKY</h3>
+                    <p>> Keystroke Injection.</p>
+                    <div class="price">5,500 ₽</div>
+                    <button class="btn-buy" onclick="addToCart('USB Rubber Ducky', 5500)">ADD TO CART</button>
+                </div>
+
+                <!-- Товар 4 -->
+                <div class="card">
+                    <div class="card-image">[HACKRF_ONE]</div>
+                    <h3>HACKRF ONE</h3>
+                    <p>> SDR 1MHz-6GHz.</p>
+                    <div class="price">32,000 ₽</div>
+                    <button class="btn-buy" onclick="addToCart('HackRF One', 32000)">ADD TO CART</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>SECURE CONNECTION. Осипов Данил Евгеньевич ИСП(11)-24-2 <span class="blink">_</span></p>
+        <small>2026 BYPASS_STORE</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

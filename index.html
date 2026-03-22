@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYPASS_STORE | HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="cart.html" class="cart-link">
+                CART <span class="cart-count" id="cartCount">0</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <!-- СЕКЦИЯ 1: Hero -->
+    <section class="hero">
+        <canvas id="matrixCanvas"></canvas>
+        <div class="logo-container">
+            <div class="ascii-logo">
+               <pre>
+   
+    ▓█████▄ ▓█████ ▓█████▄   ██████ ▓█████  ▄████▄  
+    ▒██▀ ██▌▓█   ▀ ▒██▀ ██▌▒██    ▒ ▓█   ▀ ▒██▀ ▀█  
+    ░██   █▌▒███   ░██   █▌░ ▓██▄   ▒███   ▒▓█    ▄ 
+    ░▓█▄   ▌▒▓█  ▄ ░▓█▄   ▌  ▒   ██▒▒▓█  ▄ ▒▓▓▄ ▄██▒
+    ░▒████▓ ░▒████▒░▒████▓ ▒██████▒▒░▒████▒▒ ▓███▀ ░
+     ▒▒▓  ▒ ░░ ▒░ ░ ▒▒▓  ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ░▒ ▒  ░
+     ░ ▒  ▒  ░ ░  ░ ░ ▒  ▒ ░ ░▒  ░ ░ ░ ░  ░  ░  ▒   
+     ░ ░  ░    ░    ░ ░  ░ ░  ░  ░     ░   ░        
+       ░       ░  ░   ░          ░     ░  ░░ ░      
+     ░              ░                      ░   
+                </pre>
+            </div>
+            <h1 class="glitch" data-text="BYPASS_STORE">BYPASS_STORE</h1>
+            <p class="tagline">Магазин КиберБезопасности</p>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 2: О нас -->
+   <section class="section-dark store-info" id="about">
+    <div class="container">
+        <h2 class="section-title">WHAT IS <span class="highlight">BYPASS_STORE?</span></h2>
+        <p class="section-text">
+            <strong>BYPASS_STORE</strong> — это закрытая платформа для исследователей кибербезопасности, пентестеров и IT-энтузиастов. Наш магазин предоставляет специализированные аппаратные решения для:
+        </p>
+        <ul class="feature-list">
+            <li>Аудита безопасности беспроводных сетей (Wi-Fi, Bluetooth, RFID, NFC).</li>
+            <li>Тестирования систем физического контроля доступа.</li>
+            <li>Изучения уязвимостей интерфейсов ввода (Keystroke Injection).</li>
+            <li>Анализа радиочастот и создания SDR-систем.</li>
+        </ul>
+        <p class="section-text warning-text">
+            <em>[WARNING]: Все инструменты предоставляются исключительно в образовательных целях и для легального аудита систем.</em>
+        </p>
+    </div>
+</section>
+
+    <!-- СЕКЦИЯ 3: Видео -->
+    <section class="video-section">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="trailer.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-text">
+            <h2 class="glitch" data-text="JOIN DEDSEC">JOIN DEDSEC</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>KNOWLEDGE IS FREE. Осипов Данил Евгеньевич ИСП(11)-24-2 <span class="blink">_</span></p>
+        <small>2026 BYPASS_STORE</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
